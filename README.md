@@ -1,12 +1,12 @@
 # Неделя 5. 
 
-##Easy
+## Easy
 
 Ссылка на контракт https://rinkeby.etherscan.io/address/0xe4439f6ca668ccf1344f726439fd2c428cd6fdfd
 https://gateway.ipfs.io/ipns/QmUeZUFHrU4BZNRecNbcZd2kWf5Z91gYvTnKurdfY3VRFC
 
 
-##Medium
+## Medium
 в разработке
 
 /*
@@ -33,6 +33,7 @@ contract Student {
     uint256 public contractDuration;
     uint256 public contractStartTime;
     uint256 public amount; // итоговая сумма средств контракта
+    uint256 public payed; // итоговая выплаченная сумма
 
     constructor(address _student, uint256 _contractDuration) public {
         owner = msg.sender;
@@ -51,7 +52,12 @@ contract Student {
 
     	uint256 payment = diff / contractDuration * amount; // сумма к выплате на текущий момент
 
-    	if ( payment <= this.balance ) student.send(payment);
+        if( payment >= payed ) {
+            payment = payment - paid;
+            if ( payment <= this.balance ) student.send(payment);    
+        }
+
+    	
     }
 
     function() public payable {
