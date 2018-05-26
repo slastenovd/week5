@@ -10,7 +10,7 @@ https://gateway.ipfs.io/ipns/QmUeZUFHrU4BZNRecNbcZd2kWf5Z91gYvTnKurdfY3VRFC
 в разработке
 
 https://github.com/slastenovd/week5/blob/master/contracts/Student.sol
-
+''''
 /*
 	Идея dapp
 
@@ -68,3 +68,4 @@ contract Student {
     	amount = amount + msg.value;
     }
 }
+''''
