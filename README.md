@@ -9,6 +9,8 @@ https://gateway.ipfs.io/ipns/QmUeZUFHrU4BZNRecNbcZd2kWf5Z91gYvTnKurdfY3VRFC
 ## Medium
 в разработке
 
+https://github.com/slastenovd/week5/blob/master/contracts/Student.sol
+
 /*
 	Идея dapp
 
@@ -24,6 +26,8 @@ https://gateway.ipfs.io/ipns/QmUeZUFHrU4BZNRecNbcZd2kWf5Z91gYvTnKurdfY3VRFC
 	Студент вызывает метод getMyMoney() и получает сумму на свой адрес 
 
 */
+
+
 
 pragma solidity ^0.4.20;
 
